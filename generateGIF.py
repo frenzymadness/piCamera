@@ -6,7 +6,7 @@ import os
 import datetime
 
 yesterday = datetime.date.today() - datetime.timedelta(days=1)
-yesterday = yesterday.strftime ("%Y-%m-%d")
+yesterday = yesterday.strftime("%Y-%m-%d")
 
 file_names = sorted((fn for fn in os.listdir('./images/') if fn.endswith('.jpg') and fn.startswith(yesterday)))
 
